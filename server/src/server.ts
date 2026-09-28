@@ -6,6 +6,9 @@ import authRoutes from './routes/authRoutes';
 import resumeRoutes from './routes/resumeRoutes';
 import { seedInitialData } from './utils/seedData';
 
+import path from 'path';
+
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 dotenv.config();
 
 const app = express();
